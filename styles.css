@@ -38,6 +38,23 @@ main {
 
 }
 
+/* added 4/28 iframe-container */
+.iframe-container {
+    width: 100%;
+    height: calc(100vh - 160px); /* matches padding-top of <main> */
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth mobile scrolling */
+}
+
+/* added 4/28iframe itself */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+
 
 /* 🔹 Footer Styling */
 footer {
