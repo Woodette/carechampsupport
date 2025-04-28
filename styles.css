@@ -38,13 +38,15 @@ main {
 
 }
 
-/* added 4/28 iframe-container */
+/* added 4/28 iframe container */
 .iframe-container {
     width: 100%;
-    height: calc(100vh - 160px); /* matches padding-top of <main> */
+    height: calc(100vh - 160px);
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch; /* Smooth mobile scrolling */
+    -webkit-overflow-scrolling: touch;
+    padding-top: 15px; /* ✅ smooth mobile scroll buffer */
 }
+
 
 /* added 4/28iframe itself */
 iframe {
