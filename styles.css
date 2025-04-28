@@ -81,7 +81,6 @@ main {
     height: calc(100vh - 160px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    background: white;
     padding-top: 15px;
 }
 
@@ -92,9 +91,6 @@ main {
     pointer-events: auto; /* Make sure iframe can be tapped/clicked */
     display: block;
 }
-
-
-
 
 /* 🔹 Footer Styling */
 footer {
