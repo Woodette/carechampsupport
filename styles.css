@@ -86,7 +86,7 @@ main {
 
 .iframe-container iframe {
     width: 100%;
-    height: 1700px; /* Set a LARGE enough height to fit typical articles */
+    height: 3700px; /* Set a LARGE enough height to fit typical articles */
     border: none;
     pointer-events: auto; /* Make sure iframe can be tapped/clicked */
     display: block;
