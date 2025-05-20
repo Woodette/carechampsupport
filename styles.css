@@ -69,14 +69,11 @@ header {
     transition: color 0.3s ease;
 }
 
-/* 🔹 Main Section */
 main {
     padding-top: 160px; /* Prevents content from being hidden behind fixed header */
 
 }
 
-
-/* added 4/28 iframe container */
 .iframe-container {
     width: 100%;
     height: calc(100vh - 160px); /* Fit to screen */
@@ -93,8 +90,6 @@ main {
     display: block;
 }
 
-
-/* 🔹 Footer Styling */
 footer {
     text-align: center;
     padding: 15px;
@@ -104,7 +99,6 @@ footer {
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* 🔹 Footer Image Styling */
 .footer-logo {
     max-width: 250px; /* Adjust size as needed */
     width: 100%;
