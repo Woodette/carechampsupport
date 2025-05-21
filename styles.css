@@ -79,7 +79,6 @@ main {
     height: calc(120vh - 160px); /* Fit to screen */
     background-color: whitesmoke;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
     padding-top: 15px;
     position: relative;
 }
