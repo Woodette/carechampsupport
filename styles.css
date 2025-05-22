@@ -79,7 +79,8 @@ main {
     height: calc(100vh - 160px);
     background-color: whitesmoke;
     overflow-y: auto;
-    padding-top: 15px;
+    padding-top: 10px;
+    -webkit-overflow-scrolling: touch;
     position: relative;
 }
 
