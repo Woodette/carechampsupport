@@ -80,7 +80,6 @@ main {
     background-color: whitesmoke;
     overflow-y: auto;
     padding-top: 10px;
-    -webkit-overflow-scrolling: touch;
     position: relative;
 }
 
