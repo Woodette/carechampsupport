@@ -76,7 +76,7 @@ main {
 
 .iframe-container {
     width: 100%;
-    height: calc(170vh - 160px);
+    height: calc(100vh - 160px);
     background-color: whitesmoke;
     overflow-y: auto;
     padding-top: 10px;
