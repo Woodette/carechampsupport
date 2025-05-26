@@ -71,6 +71,7 @@ header {
 
 main {
     padding-top: 160px; /* Prevents content from being hidden behind fixed header */
+    padding-bottom: 10px;
 
 }
 
@@ -78,7 +79,6 @@ main {
     height: calc(100vh - 160px);
     background-color: whitesmoke;
     position: relative;
-    overflow: hidden; /* KEY CHANGE */
 }
 
 .iframe-container iframe {
@@ -86,7 +86,6 @@ main {
     height: 100%;
     border: none;
     display: block;
-    overflow-y: auto;
 }
 
 
