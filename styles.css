@@ -87,7 +87,6 @@ main {
     height: 100%;
     border: none;
     display: block;
-    overflow-y: auto;
 }
 
 
