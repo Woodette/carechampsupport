@@ -77,6 +77,7 @@ main {
 
 .iframe-container {
     height: calc(100vh - 160px);
+    overflow: hidden;           /* 🔒 No outer scroll */
     background-color: whitesmoke;
     position: relative;
 }
@@ -86,7 +87,9 @@ main {
     height: 100%;
     border: none;
     display: block;
+    /* overflow here is ignored – the inner page controls scrolling */
 }
+
 
 
 footer {
