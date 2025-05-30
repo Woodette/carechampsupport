@@ -88,6 +88,11 @@ header {
     display: block;
 }
 
+.btn-back {
+  margin-bottom: 13px; /* or whatever space you prefer */
+}
+
+
 footer {
     text-align: center;
     padding: 15px;
