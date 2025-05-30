@@ -13,7 +13,7 @@ h2 {
 }
 
 main {
-    padding-top: 160px; /* Prevents content from being hidden behind fixed header */
+    padding-top: 130px; /* Prevents content from being hidden behind fixed header */
 
 }
 
