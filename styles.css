@@ -12,6 +12,11 @@ h2 {
     text-align: center;
 }
 
+main {
+    padding-top: 160px; /* Prevents content from being hidden behind fixed header */
+
+}
+
 /* 🔹 Header - Fixed at the Top */
 header {
     position: fixed;
@@ -67,12 +72,6 @@ header {
     font-weight: bold;
     font-size: 16px;
     transition: color 0.3s ease;
-}
-
-main {
-    padding-top: 160px; /* Prevents content from being hidden behind fixed header */
-    padding-bottom: 10px;
-
 }
 
 .iframe-container {
