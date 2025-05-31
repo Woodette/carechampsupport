@@ -13,7 +13,7 @@ h3 {
 }
 
 body.main-page main {
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 
@@ -120,19 +120,33 @@ header {
 .back-arrow {
     position: absolute;
     left: 16px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: green;
     text-decoration: none;
     cursor: pointer;
-    line-height: 1;
     padding: 8px 12px;
     border-radius: 8px;
     transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
 }
 
 .back-arrow:hover {
-    background-color: rgba(0, 128, 0, 0.1); /* Light green hover effect */
+    background-color: rgba(0, 128, 0, 0.1); /* Optional subtle hover effect */
+}
+
+.arrow {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    display: inline-block;
+}
+
+.arrow.purple {
+    color: purple;
+    margin-right: -4px; /* slight overlap effect */
+}
+
+.arrow.green {
+    color: green;
 }
 
 .iframe-header-content img {
