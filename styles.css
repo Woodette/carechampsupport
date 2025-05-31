@@ -36,6 +36,19 @@ header {
     margin: auto;
 }
 
+@media (max-width: 768px) {
+    .logo-container img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-container img {
+        max-width: 160px;
+    }
+}
+
+
 /* Wrapper link around each grid item */
 .grid-link {
     text-decoration: none;
