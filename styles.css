@@ -6,15 +6,19 @@ body {
     background: linear-gradient(144deg,  rgba(50, 130, 201, 0.5),rgb(13, 135, 211), rgb(255, 255, 255));
 }
 
-h2 {
+h3 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(34, 54, 54);
     text-align: center;
 }
 
-main {
-    padding-top: 130px; /* Prevents content from being hidden behind fixed header */
+body.main-page main {
+    padding-top: 100px;
+}
 
+
+body.iframe-page main {
+    padding-top: 80px; /* Matches the new iframe header height */
 }
 
 /* 🔹 Header - Fixed at the Top */
@@ -95,9 +99,56 @@ header {
     transition: color 0.3s ease;
 }
 
+/* For iframe pages only */
+.iframe-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.iframe-header-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-arrow {
+    position: absolute;
+    left: 16px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.back-arrow:hover {
+    background-color: rgba(0, 128, 0, 0.1); /* Light green hover effect */
+}
+
+.iframe-header-content img {
+    max-height: 50px;
+    height: auto;
+    width: auto;
+}
+
+.iframe-header-content .btn-back {
+    margin: 0;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
 
 .iframe-container {
-    height: calc(100dvh - 160px);
+    height: calc(100dvh - 60px);
     background-color: whitesmoke;
     position: relative;
     overflow: auto;
