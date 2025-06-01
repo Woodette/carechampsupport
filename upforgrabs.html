@@ -9,22 +9,33 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-  <header>
-    <div class="logo-container">
+<body class="iframe-page">
+  <header class="iframe-header">
+    <div class="iframe-header-content">
+      <a href="index.html" class="back-arrow" aria-label="Back to Help Topics">
+         <span class="arrow purple">&lt;</span><span class="arrow green">&lt;</span>
+      </a>
       <img src="https://barnestorm.com/images/carechamp.png" alt="CareChamp Logo">
     </div>
   </header>
+
   <main>
-    <a href="index.html" class="btn btn-secondary btn-back">← Back to Help Topics</a>
 
     <div class="iframe-container">
       <iframe src="https://www.barnestorm.biz/ccart?id=51732"></iframe>
     </div>
-
-    <a href="index.html" class="btn btn-secondary btn-back">← Back to Help Topics</a>
     
   </main>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector("header, .iframe-header");
+    const main = document.querySelector("main");
 
+    if (header && main) {
+      const headerHeight = header.offsetHeight;
+      main.style.paddingTop = `${headerHeight}px`;
+    }
+  });
+</script>
 </body>
 </html>

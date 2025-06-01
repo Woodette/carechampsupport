@@ -20,13 +20,24 @@
   </header>
 
   <main>
-    <a href="index.html" class="btn btn-secondary btn-back">← Back to Help Topics</a>
 
     <div class="iframe-container">
       <iframe src="https://www.barnestorm.biz/ccart?id=51740"></iframe>
     </div>
     
   </main>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector("header, .iframe-header");
+    const main = document.querySelector("main");
+
+    if (header && main) {
+      const headerHeight = header.offsetHeight;
+      main.style.paddingTop = `${headerHeight}px`;
+    }
+  });
+</script>
 
 </body>
 </html>
