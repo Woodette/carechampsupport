@@ -10,6 +10,8 @@ body {
 h3 {
     color: rgb(34, 54, 54);
     text-align: center;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 /* === MAIN PAGE HEADER === */
