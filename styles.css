@@ -1,60 +1,81 @@
+/* === GLOBAL STYLES === */
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
-    background: linear-gradient(144deg,  rgba(50, 130, 201, 0.5),rgb(13, 135, 211), rgb(255, 255, 255));
+    background: linear-gradient(144deg, rgba(50, 130, 201, 0.5), rgb(13, 135, 211), rgb(255, 255, 255));
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
     color: rgb(34, 54, 54);
     text-align: center;
 }
 
-body.main-page main {
-    padding-top: 130px;
-}
-
-
-body.iframe-page main {
-    padding-top: 120px; /* Matches the new iframe header height */
-}
-
-/* 🔹 Header - Fixed at the Top */
+/* === MAIN PAGE HEADER === */
 header {
     position: fixed;
     top: 0;
-    height: 110px;
+    height: auto; /* Matches expected space */
     width: 100%;
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
+    z-index: 1000;
 }
 
-/* 🔹 Logo inside Header */
-.logo-container img {
-    max-width: 350px; /* Increase this value for a larger desktop size */
-    width: 100%; /* responsiveness */
+/* === IFRAME PAGE HEADER === */
+.iframe-header {
+    position: fixed;
+    top: 0;
+    height: auto; /* Set for correct padding & iframe height */
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.iframe-header-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === LOGO === */
+.logo-container img,
+.iframe-header-content img {
+    width: 100%;
     height: auto;
     display: block;
     margin: auto;
+    max-width: 350px;
+}
+
+@media (max-width: 1200px) {
+    .logo-container img,
+    .iframe-header-content img {
+        max-width: 300px;
+    }
 }
 
 @media (max-width: 768px) {
-    .logo-container img {
-        max-width: 200px;
+    .logo-container img,
+    .iframe-header-content img {
+        max-width: 300px;
     }
 }
 
 @media (max-width: 480px) {
-    .logo-container img {
-        max-width: 160px;
+    .logo-container img,
+    .iframe-header-content img {
+        max-width: 250px;
     }
 }
 
 
-/* Wrapper link around each grid item */
+/* === GRID ITEMS === */
 .grid-link {
     text-decoration: none;
     color: inherit;
@@ -80,7 +101,6 @@ header {
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon styling */
 .grid-item i {
     font-size: 2.2rem;
     margin-bottom: 8px;
@@ -89,35 +109,15 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    transition: background 0.3s ease;
 }
 
-/* Text inside grid item */
 .grid-item span {
     font-weight: bold;
     font-size: 16px;
     color: black;
-    transition: color 0.3s ease;
 }
 
-/* For iframe pages only */
-.iframe-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-    z-index: 1000;
-}
-
-.iframe-header-content {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* === BACK ARROW === */
 .back-arrow {
     position: absolute;
     left: 16px;
@@ -125,13 +125,13 @@ header {
     cursor: pointer;
     padding: 8px 12px;
     border-radius: 8px;
-    transition: background-color 0.2s ease;
     display: flex;
     align-items: center;
+    transition: background-color 0.2s ease;
 }
 
 .back-arrow:hover {
-    background-color: rgba(0, 128, 0, 0.1); /* Optional subtle hover effect */
+    background-color: rgba(0, 128, 0, 0.1);
 }
 
 .arrow {
@@ -143,27 +143,16 @@ header {
 
 .arrow.purple {
     color: purple;
-    margin-right: -4px; /* slight overlap effect */
+    margin-right: -4px;
 }
 
 .arrow.green {
     color: green;
 }
 
-.iframe-header-content img {
-    max-height: 50px;
-    height: auto;
-    width: auto;
-}
-
-.iframe-header-content .btn-back {
-    margin: 0;
-    font-size: 0.9rem;
-    padding: 6px 12px;
-}
-
+/* === IFRAME CONTAINER === */
 .iframe-container {
-    height: calc(100dvh - 60px);
+    height: calc(100dvh - 70px); /* Matches .iframe-header height */
     background-color: whitesmoke;
     position: relative;
     overflow: auto;
@@ -176,11 +165,7 @@ header {
     display: block;
 }
 
-.btn-back {
-  margin-bottom: 13px; /* or whatever space you prefer */
-}
-
-
+/* === FOOTER === */
 footer {
     text-align: center;
     padding: 15px;
@@ -191,11 +176,9 @@ footer {
 }
 
 .footer-logo {
-    max-width: 250px; /* Adjust size as needed */
+    max-width: 250px;
     width: 100%;
     height: auto;
     display: block;
-    margin: 10px auto 0; /* Adds spacing above */
+    margin: 10px auto 0;
 }
-
-
