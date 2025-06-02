@@ -32,16 +32,21 @@
     </a>
   </footer>
 
-  <script>
-  document.addEventListener("DOMContentLoaded", () => {
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function adjustMainPadding() {
     const header = document.querySelector("header, .iframe-header");
     const main = document.querySelector("main");
 
     if (header && main) {
-      const headerHeight = header.offsetHeight;
+      const headerHeight = header.getBoundingClientRect().height;
       main.style.paddingTop = `${headerHeight}px`;
     }
-  });
+  }
+
+  document.addEventListener("DOMContentLoaded", adjustMainPadding);
+  window.addEventListener("resize", adjustMainPadding);
 </script>
 </body>
 </html>
