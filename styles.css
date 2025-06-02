@@ -18,7 +18,7 @@ h3 {
 header {
     position: fixed;
     top: 0;
-    height: auto; /* Matches expected space */
+    height: auto; 
     width: 100%;
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@ header {
 .iframe-header {
     position: fixed;
     top: 0;
-    height: auto; /* Set for correct padding & iframe height */
+    height: auto; 
     width: 100%;
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -52,13 +52,13 @@ header {
     height: auto;
     display: block;
     margin: auto;
-    max-width: 350px;
+    max-width: 340px;
 }
 
 @media (max-width: 1200px) {
     .logo-container img,
     .iframe-header-content img {
-        max-width: 300px;
+        max-width: 340px;
     }
 }
 
