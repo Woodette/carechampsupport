@@ -21,147 +21,54 @@
 
     <!-- Inside the <main> section -->
 <main class="pb-4">
-    <div class="container">
-        <h3>Tap Topic for Help</h3>
-        <div class="row g-3 justify-content-center">
-
-            <!-- Row 1 -->
-            <div class="col-6 col-md-3">
-                <a href="welcome.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-house"></i>
-                        <span>Welcome to CareChampPro</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="addsignature.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-user-pen"></i>
-                        <span>Add Electronic Signature</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Row 2 -->
-            <div class="col-6 col-md-3">
-                <a href="gps.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                        <span>GPS | Location Service</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="visitcomponents.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-clipboard-list"></i>
-                        <span>Visit Screen Overview</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="col-6 col-md-3">
-                <a href="startvisit.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-house-circle-check"></i>
-                        <span>Complete Visit Documentation</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="clockoutearly.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <span>Clocking Out Early</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Row 4 -->
-            <div class="col-6 col-md-3">
-                <a href="forgottoclockout.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-hand"></i>
-                        <span>Forgot To Clock Out</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="cancelvisit.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-rectangle-xmark"></i>
-                        <span>Cancel Visit - Patient Not Home</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Row 5 -->
-            <div class="col-6 col-md-3">
-                <a href="upforgrabs.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-right-long"></i>
-                        <span>Place Visit Up For Grabs</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="takeavisit.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-left-long"></i>
-                        <span>Take Available Visit</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Row 6 -->
-            <div class="col-6 col-md-3">
-                <a href="reloadschedules.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-check-double"></i>
-                        <span>Reload Schedules</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="syncvisits.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-rotate"></i>
-                        <span>Sync Visits</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Row 7 -->
-            <div class="col-6 col-md-3">
-                <a href="messages.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-comments"></i>
-                        <span>Messages | Notifications</span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="telephony.html" class="grid-link">
-                    <div class="grid-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <span>Using Telephony As Backup</span>
-                    </div>
-                </a>
-            </div>
-
-        </div>
+  <div class="container">
+    <h3>Tap Topic for Help</h3>
+    <div class="row g-3 justify-content-center" id="help-grid">
+      <!-- Help tiles will be inserted here by JavaScript -->
     </div>
+  </div>
 </main>
 
+<script>
+  const helpItems = [
+    { href: "welcome.html", icon: "fa-house", label: "Welcome to CareChampPro" },
+    { href: "gps.html", icon: "fa-map-location-dot", label: "GPS | Location Service" },
+    { href: "visitcomponents.html", icon: "fa-clipboard-list", label: "Visit Screen Overview" },
+    { href: "startvisit.html", icon: "fa-house-circle-check", label: "Complete Visit Documentation" },
+    { href: "clockoutearly.html", icon: "fa-list-ul", label: "Clocking Out Early" },
+    { href: "forgottoclockout.html", icon: "fa-hand", label: "Forgot To Clock Out" },
+    { href: "cancelvisit.html", icon: "fa-rectangle-xmark", label: "Cancel Visit - Patient Not Home" },
+    { href: "upforgrabs.html", icon: "fa-right-long", label: "Place Visit Up For Grabs" },
+    { href: "takeavisit.html", icon: "fa-left-long", label: "Take Available Visit" },
+    { href: "reloadschedules.html", icon: "fa-check-double", label: "Reload Schedules" },
+    { href: "syncvisits.html", icon: "fa-rotate", label: "Sync Visits" },
+    { href: "messages.html", icon: "fa-comments", label: "Messages | Notifications" },
+    { href: "telephony.html", icon: "fa-phone", label: "Using Telephony As Backup" },
+  ];
 
-    <footer>
-        <p>&copy; 2025 Barnestorm Software | All Rights Reserved</p>
-        <a href="https://barnestorm.com">
-            <img class="footer-logo" src="https://barnestorm.com/images/logodotcom.png" alt="Barnestorm Logo">
-        </a>
-    </footer>
+  const container = document.getElementById("help-grid");
+  helpItems.forEach(item => {
+    const tile = document.createElement("div");
+    tile.className = "col-6 col-md-3";
+    tile.innerHTML = `
+      <a href="${item.href}" class="grid-link">
+        <div class="grid-item">
+          <i class="fa-solid ${item.icon}"></i>
+          <span>${item.label}</span>
+        </div>
+      </a>
+    `;
+    container.appendChild(tile);
+  });
+</script>
+
+
+<footer>
+    <p>&copy; 2025 Barnestorm Software | All Rights Reserved</p>
+    <a href="https://barnestorm.com">
+        <img class="footer-logo" src="https://barnestorm.com/images/logodotcom.png" alt="Barnestorm Logo">
+    </a>
+</footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
